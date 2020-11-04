@@ -1,0 +1,446 @@
+@font-face{
+    font-family: "beVietnam";
+    src: url("./fonts/Be_Vietnam/BeVietnam-Medium.ttf");
+}
+body, .container{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "beVietnam";
+    font-size: 16px;    
+    width: 1440px;  
+    color: hsl(228, 39%, 23%); 
+}
+nav div, footer div{
+    width: 33%;
+}
+nav{
+    height: 0px;
+}
+nav, footer{
+    display: flex;
+    flex-direction: row;    
+    padding: 50px 160px;   
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: hsl(228, 39%, 23%);
+    font-size: small;   
+    cursor: pointer; 
+}
+a:hover{
+    color: hsl(227, 12%, 61%);
+}
+.nav-menu, .social, .footer-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+}
+.nav-img-logo{
+    width: 110px;
+    height: auto;
+}
+.nav-bg{
+    position: relative;
+    right:100px;
+    top: -250px;
+}
+.nav-button{    
+    position: relative;
+    top: -600px;
+    left: 350px;
+}
+.nav-hamburger, .nav-close{
+    position: relative;
+    top:-290px;
+    left: 260px; 
+    display: none;
+    z-index: 2;
+}
+.nav-bg-menu{
+    display: none;
+}
+button{
+    color: hsl(0, 0%, 98%);
+    padding: 15px 35px;    
+    border-radius: 50px;
+    border: none;
+    background: hsl(12, 88%, 59%);
+    font-size: small;  
+    box-shadow: 0px 15px hsl(12, 88%, 59%, 7%);   
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+h1{  
+    font-size: 3rem;     
+}
+h2{    
+     font-size: 2.5rem;  
+}
+p{
+    color: hsl(227, 12%, 61%);
+    font-size: large;
+    width: 380px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;  
+    padding-left: 160px;
+    padding-right: 140px; 
+    padding-top: 85px;     
+}
+.left, .right{
+    width: 50%;       
+}
+.two-bg{
+    position:absolute;
+    top: 500px;
+    left:-500px;
+    z-index: -1;
+}
+.content{
+    width: 450px;    
+}
+
+ul{
+    list-style: none;
+    margin: 50px 0px;
+    padding: 0px;
+    
+}
+li{
+    padding-left: 36px;
+}
+li::before{
+    content: "01";
+    margin-right: 138px;
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 25px;  
+    width: 80px;
+    height: 40px;  
+    padding: 5px 20px;
+    color: hsl(0, 0%, 98%);
+    counter-increment: inherit;
+}
+li:nth-child(2)::before{
+    content: "02";
+}
+li:nth-child(3)::before{
+    content: "03";
+}
+li p{
+    padding-left: 100px;
+    font-size: 1rem;
+    width: 440px;
+}
+.section-three{  
+    display: flex;
+    flex-direction: column;    
+    margin-top: 150px;
+    align-items: center;
+    
+}
+.slide img{
+    height: 100px;
+    position: relative;
+    top: -50px;
+}
+h3{
+    margin-left: -100px;
+    display: inline-block;
+}
+/*SLIDER -  it is very important, that we define width, and now we can see whole slider.
+overflow-x: auto showing scroll bar, but on responsive scroll bar still exist, and I have to move it.
+If we want to overflow works , we have to define height of element. Element have to be block or flex.*/
+.slider{
+    display: flex;   
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 345px;
+    width: 1465px;    
+    position: relative;
+    left: -105px;
+}
+.slider-dots{
+    display: none;
+}
+.slide{
+    width: 550px;
+    background-color: hsl(0, 0%, 98%);
+    text-align: center;
+    margin: 50px 20px;  
+}
+.slide p{
+    width: 460px;
+    padding:0px 50px;
+    font-size: 1rem;    
+}
+.section-four{
+    background-color: hsl(12, 88%, 59%);
+    background-image: url("./images/bg-simplify-section-desktop.svg");
+    background-position-y: -120px;
+    background-position-x: 280px;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 98%); 
+    padding-top: 0px; 
+    margin-top: 200px; 
+}
+.section-four button{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(12, 88%, 59%);    
+    margin-left: 430px;
+    margin-top: 80px;
+}
+.section-four.right{
+    text-align: right;
+}
+footer{    
+    background-color: hsl(233, 12%, 13%);
+    color:hsl(0, 0%, 98%);
+    height: fit-content;    
+}
+footer a{
+    color:hsl(0, 0%, 98%);
+    padding: 6px;      
+}
+footer a:hover{
+    color: hsl(12, 88%, 59%);
+}
+svg path:hover{
+    fill: hsl(12, 88%, 59%);
+}
+img svg path:hover{
+    fill: hsl(12, 88%, 59%);
+}
+.social{
+    padding-left: 12px;
+    padding-top: 60px;
+}
+.footer-menu{
+  justify-content: space-between;
+}
+footer p, footer button{
+    font-size: 0.8rem;
+    font-weight: lighter;        
+}
+input{
+    border-radius: 25px;
+    padding-left: 15px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    color:  hsl(12, 88%, 59%);  
+}
+.footer-form{
+    margin-top: -10px;   
+    position: relative;
+    left: 90px;     
+}
+.footer-form p{
+    padding-top: 10px;
+}
+#form-message{
+    color: hsl(12, 88%, 59%);
+    position: relative;
+    top: -20px;
+}
+
+@media screen and (max-width: 420px){
+    body, .container{
+        width: 100%;
+        overflow-x: hidden;
+    }          
+ section, footer{
+        flex-direction: column;
+        padding: 25px;         
+    }
+    nav{
+         padding: 30px;     
+    }   
+    .nav-img-logo{
+        width:110px;
+        height: auto;
+    }
+    .nav-menu, .nav-button{
+        display: none;
+    }    
+    .nav-menu{
+        background-color: white;
+        padding: 50px 90px;
+        text-align: center;
+        position: absolute;
+        top: 80px;
+        left: 40px;
+        z-index: 3; 
+              
+    }
+    .nav-bg-menu{
+        position: absolute;
+        top: -30px;
+        left: 0px;
+        width: 425px;
+        height: 850px;
+        background-color: hsl(227, 12%, 61%);       
+        background-image: linear-gradient(white 5%, black);
+        opacity: 0.6;
+        z-index: 1;
+    }
+    .nav-menu a{
+        display: block;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .nav-bg-mobile{
+        width: 450px;
+        height: auto;       
+    }
+    #nav-bg-mobile{
+        width: 100%;
+        height: auto;
+    }
+    .nav-bg{
+        position: relative;
+        top: -170px;
+        right: 70px;
+    }
+    .nav-hamburger{        
+        display: inherit;
+              
+    }
+    /****SECTION ONE***/    
+    .section-one{
+        flex-direction: column-reverse;
+        width:100%;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .content{
+        width: 90%;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin: 0px;
+    }
+    p{
+        width: 325px;
+        font-size: medium;
+    }
+    button{
+        margin: 20px 95px;
+    }
+    .section-one-svg{
+        width:330px;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .two-bg{        
+        position: absolute;
+        top: -350px;
+        left: 250px;
+    }
+    .two-bg img{
+        width: 400px;
+        height: auto;
+    }   
+    li{
+        padding-left: 0px;
+    }
+    li h3{
+        font-size: 0.9rem;
+        margin-left: 0px;
+        background-color:hsl(12, 88%, 59%, 7%);
+        padding: 6px 88px 6px 30px;
+        margin-right: -80px;
+    }
+    li::before{
+        margin-right: -10px;
+    }
+    li p{
+        width: 310px;
+        font-size: 0.8rem;
+        padding-left: 0px;
+    }
+    .section-three{       
+        margin-top: 0px;
+    }
+    .slider{ 
+        /*slide efekat achieved with change left position, 
+        but we could also  make this effekte with transform:translateX(375px), it is better solution when 
+        we use swipe on mobile instead onclick . */         
+        left: 185px;  
+        transition: 2s; 
+        overflow-x: hidden;     
+    }
+    .slider-dots{
+        display: initial;
+    }
+    .dot{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid hsl(12, 88%, 59%);
+    }
+    .active{
+        background-color: hsl(12, 88%, 59%);
+    }
+    .slide{
+       width: 375px;      
+       margin: 50px 0px;
+    }
+    .slide p{
+        font-size: 0.8rem;
+        width: 270px;        
+    }
+    .section-four{
+        margin-top: 50px;
+        text-align: center;
+        padding-top: 50px;        
+        background-image: url("./images/bg-simplify-section-mobile.svg");        
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+    .section-four button{
+        margin-left: 80px;
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
+    footer div{
+        width: 100%;
+    }
+    footer button{
+        margin: 0px;
+    }
+    .footer-form{
+        left: 10px
+    }
+    .social{
+        padding-bottom: 50px;
+    }
+    .footer-div-first{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: stretch;
+        padding-bottom: 100px;
+    }
+    .footer-menu{
+        padding-left: 50px;
+    }
+    #footer-copy{
+        position: relative;
+        top: 400px;
+        left: 50px;
+    }
+}
+
