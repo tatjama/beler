@@ -19,19 +19,24 @@
         <img class="nav-img-logo" src="./images/logo/beler-logo-big.png">
       </div>
       <div class="nav-menu">
-        <a href="#">Pricing</a>
-        <a href="#">Product</a>
-        <a href="#">About Us</a>
-        <a href="#">Careers</a>
-        <a href="#">Community</a>
+        <a href="#usluge-projekti">Projekti</a>
+        <a href="#usluge-konsalting">Konsalting</a>
+        <a href="#usluge-inzenjering">Inženjering</a>
+        <a href="#reference">Reference</a>
+        <a href="#mi">O nama</a>
       </div>      
       <div class="nav-bg">         
         <div class="nav-bg-mobile">
             <img id="nav-bg-mobile" src="./images/bg-tablet-pattern.svg">
         </div>
-        <button class="nav-button">
-          Get Started
-        </button>
+        <div class="nav-button">
+            <button onclick="openContact()" class="nav-button-bt">
+                Kontaktirajte nas
+            </button>
+            <div id="contact">
+             +38160-222-333
+            </div>
+        </div>
         <div onclick="openMenu()" class="nav-hamburger"  >
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18"><g fill="#242D52" fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>
         </div>
@@ -55,7 +60,7 @@
           mestu omogućavaju prilagođavanje sobne klime, osvetljenja i osenčavanja individualnim potrebama..
         </p>
         <button>
-          Get Started
+          Pozovite nas
         </button>
         </div>
       </div>
@@ -100,10 +105,73 @@
           </ul>
       </div>
     </section>
+    <div class="section-five">
+        <h2>Usluge</h2>
+        <div class="section-row">
+            <div>
+                <figure>
+                    <img src="./images/icons/svg/046-timeline.svg"/>
+                </figure>
+                <figcaption>
+                    Upravljanje projektima
+                </figcaption>
+            </div>
+            <div id = "usluge-konsalting">
+                <figure>
+                    <img src="./images//icons/svg/004-creative idea.svg"/>
+                </figure>
+                <figcaption>
+                    Konsalting
+                </figcaption>
+            </div>
+            <div id="usluge-projekti">
+                <figure>
+                    <img src="./images/icons/svg/002-compass.svg"/>
+                </figure>
+                <figcaption>
+                    Projektovanje
+                </figcaption>
+            </div>
+            <div id = "usluge-inzenjering">
+                <figure>
+                    <img src="./images/icons/svg/031-vector.svg"/>
+                </figure>
+                <figcaption>
+                    Inženjering
+                </figcaption>
+            </div>
+            
+        </div>
+    </div>
+    <div class="section-six">
+        <h2 id = "reference">Reference</h2>
+        <div class="section-row project-bg">
+            <div class="project">
+                <figure>
+                    <img src="./images/intro/high-technology-concept-landing-page-600w-1060281800.webp">
+                </figure>
+                <figcaption>Konsalting IKEA</figcaption>
+            </div>
+            <div class="project">
+                <figure>
+                    <img src="./images/intro/mechanical-engineering-drawing-background-vector-600w-547028884.webp">
+                </figure>
+                <figcaption>Projekat IKEA</figcaption>
+            </div>
+            <div class="project">
+                <figure>
+                    <img src="./images/intro/workers-used-wooden-ladder-complete-600w-407881741.webp">
+                </figure>
+                <figcaption>Izrada čiste sobe</figcaption>
+            </div>
+            
+        </div>
+
+    </div>
     <!--SLIDER-->
     <div class="section-three">
       <div>
-        <h2>Naš tim</h2>
+        <h2 class="hide" id = "mi">Naš tim</h2>
       </div>      
       <div class="slider">        
         <div class="slide">
@@ -116,7 +184,8 @@
          <img src="./images/avatar-ali.png">
         <h3>Ivana</h3>
         <p> 
-          Streptomicinka (rodna ravnopravnost) za Lazu... Mnogo voli Google asistentkinju        
+          Crta kao Leonardo.Streptomicinka (rodna ravnopravnost) za Lazu... 
+          Mnogo voli Google asistentkinju        
         </p>
         </div>
         <div class="slide">
@@ -144,19 +213,19 @@
       </div>
       
       <div>
-        <button>Get Started</button>
+        <button>Pozovite nas</button>
       </div>
     </div>
     
     <section class="section-four">
       <div class="left">
         <h1>
-          Simplify how your team works today.
+          Odaberite pravi tim za vaš novi projekat.
         </h1>
       </div>
       <div class="right">
         <button>
-          Get Started
+          Pozovite
         </button>
       </div> 
     </section>
@@ -174,15 +243,15 @@
       </div>
       <div class="footer-menu">
         <div>
-          <a href="#">Home</a>
-          <a href="#">Pricing</a>
-          <a href="#">Products</a>
-          <a href="#">About us</a>
+          <a href="#contact">Pošetna</a>
+          <a href="#usluge-konsalting">Usluge</a>
+          <a href="#mi">Garancija</a>
+          <a href="#mi">O nama</a>
         </div>
         <div>
-          <a href="#">Careers</a>  
-          <a href="#">Community</a>  
-          <a href="#">Privacy Policy</a>  
+          <a href="#usluge-konsalting">Cene</a>  
+          <a href="#reference">Reference</a>  
+          <a href="#mi">Kontakti</a>  
       </div>
     </div>
       <div class="footer-form">

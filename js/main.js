@@ -1,3 +1,7 @@
+const openContact = () => {
+    document.getElementById("contact").style.display = "block";
+    document.querySelector(".nav-button-bt").style.display = "none";
+}
 function openMenu(){    
     document.querySelector('.nav-hamburger').style.display = 'none';
     document.querySelector('.nav-close').style.display = 'initial';
