@@ -1,0 +1,9 @@
+.two-bg{
+    position:absolute;
+    top: 500px;
+    left:80px;
+    z-index: -1;
+}
+.slider{
+    left: 0px;
+}
