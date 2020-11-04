@@ -82,7 +82,12 @@
 .project figcaption{
     text-align: center;
 }
-
+#dva{
+    background-color: teal;
+}
+#dva button{
+    color: teal;
+}
 @media screen and (max-width: 420px){
     .two-bg{
         position:absolute;
