@@ -105,7 +105,10 @@
    .project-bg{
        height: 1000px;
    } 
-    .section-six{
-        margin-bottom: -80px;
+    .section-six .section-row{
+        margin-bottom: 170px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }  
 }
